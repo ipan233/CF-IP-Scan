@@ -1,0 +1,9 @@
+# docker compose.yml
+version: '3.7'
+services:
+  scanner:
+    build: .
+    volumes:
+      - .:/app
+    env_file:
+      - .env
