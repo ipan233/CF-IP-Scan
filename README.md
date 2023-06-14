@@ -24,4 +24,34 @@ curl --location 'https://api.cloudflare.com/client/v4/zones/你的zoneid/dns_rec
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-zIoi9)
 
+## Deploy CF-IP-Scan to Local (Docker)
+
+```bash
+git clone https://github.com/3Kmfi6HP/CF-IP-Scan.git
+cd CF-IP-Scan
+docker build -t cf-ip-scan .
+docker run -d --name cf-ip-scan cf-ip-scan
+```
+
+```bash
+docker exec -it cf-ip-scan bash
+```
+
+## Deploy CF-IP-Scan to Local (Bash)
+
+```bash
+git clone https://github.com/3Kmfi6HP/CF-IP-Scan.git
+cd CF-IP-Scan
+bash entrypoint.sh
+```
+
+## Deploy CF-IP-Scan to Local (docker-compose)
+
+```bash
+git clone https://github.com/3Kmfi6HP/CF-IP-Scan.git
+cd CF-IP-Scan
+nano docker-compose.yml # edit your config
+docker-compose up -d
+```
+
 done
