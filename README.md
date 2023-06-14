@@ -11,3 +11,17 @@ ddns.txt 文件存放的是 zone_id 和 域名 ID
 ```bash
 curl --location 'https://api.cloudflare.com/client/v4/zones/你的zoneid/dns_records' --header 'Authorization: Bearer 你的bearer密钥'
 ```
+
+## Deploy Alist to Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+## Deploy Alist to Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+## Deploy Alist to railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-zIoi9)
+
+done
